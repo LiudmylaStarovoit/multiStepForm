@@ -23,7 +23,7 @@
 
 .container {
     max-width: 1440px;
-    min-height: 100vh;
+    height: 780px;
     margin: 0 auto;
     padding: 20px;
     display: grid;
@@ -189,7 +189,7 @@
         }
     }
     &_img {
-        margin-bottom: 78px;
+        margin-bottom: 50px;
     }
     &_title {
         font-weight: 700;
@@ -446,6 +446,6 @@
         text-align: center;
         line-height: 25px;
     }
-} 
+}
 
-
+@import './media';

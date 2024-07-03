@@ -90,7 +90,7 @@ goToStep3.addEventListener('click', () => {
         }
     });
     selectPlanPeriod.forEach(item => {
-        if(item.classList.contains('active-period')) {
+        if (item.classList.contains('active-period')) {
             periodPlan = item.innerHTML;
         }
     });
@@ -167,13 +167,11 @@ toggle.addEventListener('click', () => {
             freeMonths.forEach(item => {
                 item.classList.remove('hidden');
             });
-            wrap.style.gridTemplate = '220px/repeat(3, 1fr)';
         } else {
             item.textContent = `$${item.textContent.replace(/\D/gmi, '')/10}/mo`;
             freeMonths.forEach(item => {
                 item.classList.add('hidden');
             });
-            wrap.style.gridTemplate = '200px/repeat(3, 1fr)';
         }
     }); 
 });
